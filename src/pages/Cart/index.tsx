@@ -5,8 +5,6 @@ import {
   MdRemoveCircleOutline,
 } from 'react-icons/md';
 
-import { toast } from 'react-toastify';
-
 import { useCart } from '../../hooks/useCart';
 import { formatPrice } from '../../util/format';
 import { Container, ProductTable, Total } from './styles';
@@ -41,8 +39,6 @@ const Cart = (): JSX.Element => {
       productId: product.id,
       amount: product.amount + 1
     });
-
-    toast.info("Um par de tênis foi adicionado!");
   }
 
   function handleProductDecrement(product: Product) {
@@ -50,14 +46,10 @@ const Cart = (): JSX.Element => {
       productId: product.id,
       amount: product.amount - 1
     });
-
-    toast.info("Um par de tênis foi removido!");
   }
 
   function handleRemoveProduct(productId: number) {
     removeProduct(productId);
-
-    toast.warn("Um tênis foi removido do seu carrinho!");
   }
 
   return (

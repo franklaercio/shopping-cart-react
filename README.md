@@ -1,5 +1,5 @@
 <h2 align="center"> 
-  :shoe: RocketShoes
+  :shoe:  RocketShoes
 </h1>
 
 <p align="center">

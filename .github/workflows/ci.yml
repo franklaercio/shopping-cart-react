@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 14
       - run: yarn
-      - run: yarn test:ci
+      - run: yarn test
       - name: Tests ✅
         if: ${{ success() }}
         run: |
